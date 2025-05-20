@@ -14,7 +14,7 @@ def load_uci_shopping_dataset():
     Returns:
         pandas.DataFrame: The Online Shoppers Purchasing Intention dataset
     """
-    # Dieses "Ladesystem wurde mit Hilfe von AI entwickelt"
+    # Dieses "Ladesystem" wurde mit Hilfe von ChatGPT entwickelt, es funktionniert wie folgt
     # 1. Versucht den Datensatz aus attached_assets zu laden (primäre Quelle)
     # 2. Wenn nicht vorhanden, versucht es ihn aus dem data-Verzeichnis zu laden
     # 3. Wenn auch das fehlschlägt, ladt es direkt vom UCI-Repository

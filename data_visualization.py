@@ -1,3 +1,5 @@
+# Die Plots in dieser Page wurden zum Teil mit Hilfe von Replit verschönert/zusammengefügt
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px

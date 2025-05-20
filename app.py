@@ -727,9 +727,10 @@ def interactive_prediction_page(df):
             from model_loader import predict_with_real_model
             from custom_predictions import get_model_specific_predictions
             
-            # Form column layout
+            # Form column layout (mit ChatGPT Layout finetuned)
             col1, col2 = st.columns(2)
-            
+
+            # Kategorische Eingaben per Slider/Selectbox/Checkbox erstellen
             with col1:
                 # Numerische Eingaben
                 page_values = st.slider(
@@ -759,7 +760,7 @@ def interactive_prediction_page(df):
                 )
             
             with col2:
-                # Kategorische Eingaben
+               
                 visitor_type = st.selectbox(
                     "Besuchertyp",
                     options=["Returning_Visitor", "New_Visitor", "Other"],
@@ -792,7 +793,7 @@ def interactive_prediction_page(df):
                     value=2
                 )
             
-            # Informational ist ein wichtiges Feature
+       
             informational = st.slider(
                 "Informational (Anzahl besuchter Informationsseiten)", 
                 min_value=0, 
@@ -822,7 +823,7 @@ def interactive_prediction_page(df):
                 
                 input_data['Weekend'] = [weekend]
                 
-                # Zeige die Eingabedaten an
+                # Zeigt die Eingabedaten an
                 st.subheader("Eingabedaten für Vorhersage:")
                 st.dataframe(input_data)
                 
@@ -1026,7 +1027,7 @@ def interactive_prediction_page(df):
         col1, col2 = st.columns([2, 1])
         
         with col1:
-            # File uploader
+            # File uploader wurde mit Hilfe von Replit erstellt
             uploaded_file = st.file_uploader("Wählen Sie eine CSV-Datei", type=["csv"])
             
         with col2:

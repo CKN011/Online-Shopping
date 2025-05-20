@@ -40,7 +40,7 @@ from f9tuned_simplified import (
     predict_with_f9tuned
 )
 
-# Integration des Trainingsablaufs
+# Integration des Trainingsablaufs (für die Integration in die App wurde ChatGPT verwendet)
 def train_and_save_models_if_needed():
     """Trainiert und speichert Modelle, falls sie noch nicht existieren"""
     models_to_train = {
@@ -72,7 +72,7 @@ def train_and_save_models_if_needed():
             except Exception as e:
                 print(f"Fehler beim Training von {model_name}: {str(e)}")
 
-# Farbschema für die Anwendung
+# Farbschema für die Anwendung (mit ChatGPT erstellt)
 COLOR_SCHEMA = {
     'primary': '#FF4B4B',       # Rot für Primäraktionen
     'secondary': '#0083B8',     # Blau für sekundäre Aktionen
@@ -97,7 +97,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Add CSS for styled components (Marketing-freundliche Version)
+# Add CSS for styled components (Mit Hilfe von ChatGPT)
 st.markdown("""
 <style>
 /* Verbesserte Metriken-Container */
@@ -321,7 +321,7 @@ def data_overview_page(df):
     with col3:
         purchase_rate = df['Revenue'].mean() * 100
         st.metric("Kaufrate", f"{purchase_rate:.2f}%")
-    
+    #Text mit ChatGPT erstellt
     st.info("""
     ### Über den UCI-Datensatz "Online Shoppers Purchasing Intention"
     
@@ -484,7 +484,7 @@ def data_overview_page(df):
         except Exception as e:
             st.error(f"Fehler bei der Analyse zeitlicher Muster: {str(e)}")
         
-    # Data filtering und export optionen
+    # Data filtering und export optionen, Funktion mit Replit trouble shooted
     st.subheader("Datenfilterung und Export")
     
     # Filter Optionen
@@ -571,7 +571,7 @@ def ml_models_page(df):
             "lightgbm", "stacking", "baseline"
         ]
         
-        # Benutzerfreundliche Namen für die Modelle ohne Beschreibungen
+        # Modell Namen
         model_display_names = {
             "randomforest": "Random Forest",
             "logreg": "Logistische Regression",

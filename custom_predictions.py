@@ -1,7 +1,4 @@
-"""
-Verbesserte Vorhersagefunktionen für die E-Commerce Kaufabsicht App
-Diese Funktionen simulieren die modelspezifischen Verhaltensweisen für jedes unterstützte Modell
-"""
+# Wurde mit Hilfe von Replit erstellt, um Werte für verschiedene Modelle zu generieren, basierend jedoch auf den Eingaben
 import numpy as np
 import pandas as pd
 

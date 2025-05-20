@@ -1,6 +1,4 @@
-"""
-Simulierte Modellstatistiken für die Vorhersagemodelle
-"""
+# Simulierte Modellstatistiken für die Vorhersagemodelle, wurden mit Hilfe von ChatGPT erstellt
 import pandas as pd
 import numpy as np
 
@@ -14,7 +12,7 @@ def get_model_metrics(model_name):
     Returns:
         dict: Metriken für das Modell (Accuracy, Precision, Recall, F1-Score)
     """
-    # Aktualisierte Metriken basierend auf den echten F9Tuned-Modellergebnissen
+    # Für die Tatsächlichen Modelle im f9tuned
     metrics = {
         'randomforest': {
             'accuracy': 0.8942,
@@ -96,7 +94,7 @@ def get_model_metrics(model_name):
 
 def generate_confusion_matrix(model_name):
     """
-    Generiert eine realistische Konfusionsmatrix für das angegebene Modell
+    Generiert eine "realistische KonfusionsmatrixW für das angegebene Modell
     
     Args:
         model_name (str): Name des Modells
